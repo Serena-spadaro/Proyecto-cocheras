@@ -1,0 +1,43 @@
+#seccion-reportes {
+    background-color: #a19b93;
+    height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+     align-items: center;
+    padding: 20px;
+    #tabla {
+        color: beige;
+        display: flex;
+        flex-direction: column;
+         width: 80%;
+        padding:20px;
+        margin: 15px ;
+    
+        #header-tabla2 {
+            padding: 20px;
+            background-color: #625b54;
+            display: flex;
+            justify-content: space-between;
+            color: #c7ac8b;
+            box-shadow: 1px 1px 10px #57544f;
+            border-radius: 6px 6px 0 0;
+        }
+    
+        > div {
+            display: grid;
+            grid-template-columns: 230px 1fr 1fr 1fr  ;
+            padding: 10px;
+            align-items: center;
+            border-bottom: 1px solid #484239;
+            transition: background-color 0.3s;
+    
+            &:hover {
+                background-color: #847d6f;
+            }
+        }
+       
+    }
+    
+
+}
+

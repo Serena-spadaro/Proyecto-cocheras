@@ -1,0 +1,15 @@
+<header id="header">
+  <div id="lusso-motori">
+    <img src="https://pngimg.com/uploads/car_logo/car_logo_PNG1654.png" alt="logo" id="logo">
+    <p>Lusso Motori</p>
+  </div>
+  <nav id="navegacion-header">
+    <a [routerLink]="['/estado-cocheras']" routerLinkActive="activo"class= "boton-header"> Estado Cocheras</a>
+    @if (esadmin){
+      <a [routerLink]="['/reportes']" routerLinkActive="activo" class="boton-header">Reportes</a>
+    }
+    
+
+    <button  (click)="logout()"class="boton-header">Log Out</button>
+    </nav>
+</header>

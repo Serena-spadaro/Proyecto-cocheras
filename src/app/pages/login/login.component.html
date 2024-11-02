@@ -1,0 +1,27 @@
+
+<section id="seccion-1">
+    <div id="titulo1">
+        <p>Lusso Motori</p>
+    </div> 
+    <section id="seccion-3"> 
+        
+    </section>
+
+    <div id="formulario">
+
+        <form id="formulario1">
+            <label for="username">Usuario:</label>
+            <input type="text" name="username" class= "input" id="username"[(ngModel)]="datosLogin.username" >
+            
+            <label for=" password">Contraseña:</label>
+            <input type="text" id="password" name="password"[(ngModel)]="datosLogin.password" >
+
+            <button type="button" id= "boton-inicio" (click)="login()">Iniciar sesion</button> 
+           
+        </form>
+
+     
+
+    </div>
+
+</section>

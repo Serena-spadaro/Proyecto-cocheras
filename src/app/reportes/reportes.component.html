@@ -1,0 +1,21 @@
+<section id="seccion-reportes">
+    <app-header></app-header>
+        <main>
+            <div id="tabla">
+                <div id="header-tabla2">
+                    <div>Numero</div>
+                    <div>Mes</div>
+                    <div>Usos</div>
+                    <div>Cobrado</div>
+                </div>
+                @for (reporte of reporteEstacionamientos; track reporte.numero){
+                    <div id="content">
+                        <div>{{reporte.numero}}</div>
+                        <div>{{reporte.mes}}</div>
+                        <div>{{reporte.usos}}</div>
+                        <div>{{reporte.cobrado}}</div>
+                    </div>
+                }
+            </div>
+        </main>
+</section>
